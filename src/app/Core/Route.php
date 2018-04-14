@@ -12,7 +12,7 @@ class Route {
      * Examples of use :
      * 1. Call show function of ErrorController    →    $router->error('show');
      * 2. Call show function of HomeController     →    $router->get('/', 'Home#show');
-     * 3. WorkController with multiple option      →    $router->get('/work/:id/:name', 'WorkOne#show-')->with('id', '[0-9]+')->with('name', '[a-z0-9-]+');
+     * 3. WorkController with multiple option      →    $router->get('/work/:id/:name', 'WorkOne#show')->with('id', '[0-9]+')->with('name', '[a-z0-9-]+');
      * 4. WorkController with type option          →    $router->get('/work/:type', 'WorkAll#showWithType')->with('type', 'date|title|type');
      * 5. Call show function of WorkController     →    $router->get('/work', 'WorkAll#show');
      *

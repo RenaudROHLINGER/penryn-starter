@@ -9,14 +9,14 @@ class EventDelegation {
 
         // Parameters
         this.p = window.Penryn
-        this.xhr = S.Geb.id('xhr')
+        this.xhr = S.G.id('xhr')
 
         // Bind
         S.BindMaker(this, ['eventDelegation', 'done', 'xhrCallback'])
     }
 
     run () {
-        S.Listen(S.Dom.body, 'add', 'click', this.eventDelegation)
+        S.L(S.Dom.body, 'add', 'click', this.eventDelegation)
     }
 
     eventDelegation (event) {

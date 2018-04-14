@@ -33,7 +33,7 @@ class Xhr {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 const xhrC = JSON.parse(xhr.responseText).xhrController
 
-                S.Geb.tag('title')[0].textContent = xhrC.title
+                S.G.tag('title')[0].textContent = xhrC.title
 
                 getHistoryUpdate()
                 callback(xhrC.view, args)
@@ -55,8 +55,8 @@ class Xhr {
 
         let blockPopstateEvent = d.readyState !== 'complete'
 
-        S.Listen(w, 'add', 'load', load)
-        S.Listen(w, 'add', 'popstate', popstate)
+        S.L(w, 'add', 'load', load)
+        S.L(w, 'add', 'popstate', popstate)
 
         function load () {
             setTimeout(_ => {
