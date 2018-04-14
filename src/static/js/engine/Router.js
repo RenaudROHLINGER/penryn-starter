@@ -19,7 +19,7 @@ xhr
 
 */
 
-import S from 'skylake'
+import S from '@ariiiman/s'
 import Xhr from './Xhr.js'
 import EventDelegation from './EventDelegation.js'
 
@@ -31,7 +31,7 @@ class Router {
         this.p = window.Penryn
 
         // Bind
-        S.BindMaker(this, ['getInstance'])
+        S.BM(this, ['getInstance'])
 
         // Outro is on : paralyse outro method during animations
         this.p.outroIsOn = false

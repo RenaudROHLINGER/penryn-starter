@@ -1,4 +1,4 @@
-import S from 'skylake'
+import S from '@ariiiman/s'
 import Xhr from './Xhr.js'
 
 class EventDelegation {
@@ -12,7 +12,7 @@ class EventDelegation {
         this.xhr = S.G.id('xhr')
 
         // Bind
-        S.BindMaker(this, ['eventDelegation', 'done', 'xhrCallback'])
+        S.BM(this, ['eventDelegation', 'done', 'xhrCallback'])
     }
 
     run () {

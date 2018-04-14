@@ -19,11 +19,11 @@ Xhr.onPopstate()
 
 */
 
-import S from 'skylake'
+import S from '@ariiiman/s'
 
 class Xhr {
 
-    static controller (page, callback, args) {
+    static controller (page, cb, args) {
         const path = 'index.php?url=' + page + '&xhr=true'
         const xhr = new XMLHttpRequest()
 
@@ -36,7 +36,7 @@ class Xhr {
                 S.G.tag('title')[0].textContent = xhrC.title
 
                 getHistoryUpdate()
-                callback(xhrC.view, args)
+                cb(xhrC.view, args)
             }
         }
         xhr.send(null)

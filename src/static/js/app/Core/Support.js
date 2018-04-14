@@ -1,4 +1,4 @@
-import S from 'skylake'
+import S from '@ariiiman/s'
 
 class Support {
 
