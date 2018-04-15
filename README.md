@@ -17,4 +17,4 @@ yarn
 - ESLint
 - Rollup
 - Uglify JS 3
-- Skylake
+- @ariiiman/s

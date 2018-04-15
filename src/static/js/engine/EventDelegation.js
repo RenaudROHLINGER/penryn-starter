@@ -9,6 +9,7 @@ class EventDelegation {
 
         // Parameters
         this.p = window.Penryn
+        this.b = S.Dom.body
         this.xhr = S.G.id('xhr')
 
         // Bind
@@ -16,7 +17,7 @@ class EventDelegation {
     }
 
     run () {
-        S.L(S.Dom.body, 'add', 'click', this.eventDelegation)
+        S.L(this.b, 'add', 'click', this.eventDelegation)
     }
 
     eventDelegation (event) {
