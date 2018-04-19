@@ -15,4 +15,7 @@ services:
             - 3306:3306
         restart: always
         environment:
+            - MYSQL_DATABASE=___base_name___
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=root
             - MYSQL_ROOT_PASSWORD=root
