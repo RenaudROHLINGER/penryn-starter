@@ -1,6 +1,6 @@
 {
     "name": "penryn-starter",
-    "version": "8.2.0",
+    "version": "8.2.1",
     "description": "A starter kit for web development",
     "author": "Aristide Benoist",
     "license": "MIT",
@@ -18,7 +18,7 @@
         "autoprefixer": "8.3.0",
         "babel-core": "6.26.0",
         "babel-preset-es2015-rollup": "3.0.0",
-        "browser-sync": "2.23.6",
+        "browser-sync": "2.23.7",
         "colors": "1.2.1",
         "css-mqpacker": "6.0.2",
         "cssnano": "3.10.0",

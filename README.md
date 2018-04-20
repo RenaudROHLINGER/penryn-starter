@@ -2,9 +2,15 @@
 
 A starter kit for web development.
 
+## Installation
+
+docker-compose up
+yarn
+
 ## Usage
 
-yarn
+yarn run dev
+yarn run prod
 
 ## Features
 
