@@ -4,13 +4,13 @@ A starter kit for web development.
 
 ## Installation
 
-- docker-compose up
-- yarn
+    docker-compose up
+    yarn
 
 ## Usage
 
-- yarn run dev
-- yarn run prod
+    yarn run dev
+    yarn run prod
 
 ## Features
 
