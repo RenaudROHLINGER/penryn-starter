@@ -12,7 +12,7 @@ module.exports = opts => {
         plugins: [
             eslint({
                 configFile: opts.eslint,
-                exclude: ['node_modules/**', '**/Skylake.js']
+                exclude: ['node_modules/**', '**/S.js']
             }),
             babel({
                 babelrc: false,
@@ -23,7 +23,7 @@ module.exports = opts => {
             }),
             resolve(),
             commonjs({
-                include: ['node_modules/**', '**/Skylake.js']
+                include: ['node_modules/**', '**/S.js']
             })
         ]
     }).then(bundle => {
