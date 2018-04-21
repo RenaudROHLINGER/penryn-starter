@@ -1,6 +1,6 @@
 {
     "name": "penryn-starter",
-    "version": "8.2.5",
+    "version": "8.2.6",
     "description": "A starter kit for web development",
     "author": "Aristide Benoist",
     "license": "MIT",
@@ -44,6 +44,6 @@
         "rollup-plugin-commonjs": "9.1.0",
         "rollup-plugin-eslint": "4.0.0",
         "rollup-plugin-node-resolve": "3.3.0",
-        "uglify-js": "3.3.21"
+        "uglify-js": "3.3.22"
     }
 }
