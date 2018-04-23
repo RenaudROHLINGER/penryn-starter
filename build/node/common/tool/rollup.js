@@ -28,8 +28,9 @@ module.exports = opts => {
         ]
     }).then(bundle => {
         bundle.write({
+            intro: 'window.Penryn={};',
             file: opts.dest,
-            format: 'cjs'
+            format: 'iife'
         })
     }).then(() => {
         opts.callback()

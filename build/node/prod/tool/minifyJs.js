@@ -8,10 +8,6 @@ module.exports = _ => {
     // Add all files from main.js
     const js = fs.readFileSync(config.src + config.minify.js, 'utf8')
     const result = uglifyJS.minify(js).code
-    const closure = {
-        start: '(function(){',
-        end: '})();'
-    }
 
     // Add additional scripts
     let additionalScript
@@ -49,7 +45,7 @@ module.exports = _ => {
 
     function getFullResult () {
         // Grouping
-        const fullResult = closure.start + additionalScript + result + closure.end
+        const fullResult = additionalScript + result
 
         writeInternal({
             content: fullResult,
