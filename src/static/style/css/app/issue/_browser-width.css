@@ -7,12 +7,8 @@
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 #issue-bw-w {
     display: none;
-    position: fixed;
+    position: fixed 0;
     z-index: 9999;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
     background: #fff;
 }
