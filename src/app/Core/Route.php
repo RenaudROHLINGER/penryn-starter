@@ -10,7 +10,7 @@ class Route {
      * For the same page, always put the most accurate routes first
      *
      * Examples of use :
-     * 1. Call show function of ErrorController    →    $router->error('show');
+     * 1. Call show function of P404Controller     →    $router->p404('show');
      * 2. Call show function of HomeController     →    $router->get('/', 'Home#show');
      * 3. WorkController with multiple option      →    $router->get('/work/:id/:name', 'WorkOne#show')->with('id', '[0-9]+')->with('name', '[a-z0-9-]+');
      * 4. WorkController with type option          →    $router->get('/work/:type', 'WorkAll#showWithType')->with('type', 'date|title|type');
@@ -30,7 +30,8 @@ class Route {
         $router->get('/', 'Home#show');
         $router->get('/about', 'About#show');
 
-        $router->error('show');
+        $router->debug('show');
+        $router->p404('show');
 
         $router->run();
     }

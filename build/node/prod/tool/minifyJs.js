@@ -6,7 +6,7 @@ const consoleEnd = require('./consoleEnd.js')
 
 module.exports = _ => {
     // Add all files from main.js
-    const js = fs.readFileSync(config.src + config.minify.js, 'utf8')
+    const js = fs.readFileSync(config.src + config.minify.root + config.minify.js, 'utf8')
     const result = uglifyJS.minify(js).code
 
     // Add additional scripts

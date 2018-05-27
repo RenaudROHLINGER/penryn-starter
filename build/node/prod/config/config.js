@@ -3,30 +3,26 @@ module.exports = {
     dest: 'dist/',
     compiler: {
         css: {
-            entry: 'static/style/css/main.css',
-            dest: 'static/style/css/app.css',
+            entry: 'asset/css/main.css',
+            dest: 'public/css/app.css',
             autoprefixer: ['last 2 versions']
         },
         js: {
-            entry: 'static/js/main.js',
-            dest: 'static/js/app.js',
+            entry: 'asset/js/main.js',
+            dest: 'public/js/app.js',
             eslint: 'build/node/common/config/.eslintrc'
         }
     },
     minify: {
-        css: 'static/style/css/app.css',
-        js: 'static/js/app.js',
+        root: 'public/',
+        css: 'css/app.css',
+        js: 'js/app.js',
         html: {
             view: 'app/View/',
             folder: ['base', 'common', 'page']
         }
     },
     copy: [
-        '.htaccess',
-        '.htpasswd',
-        'index.php',
-        'robots.txt',
-        'sitemap.xml',
         'app/Bundle',
         'app/Config',
         'app/Controller',
@@ -34,14 +30,22 @@ module.exports = {
         'app/Lib',
         'app/Model',
         'engine',
-        'static/media',
-        'static/style/font'
+        'public/fav',
+        'public/font',
+        'public/media',
+        'public/og',
+        'public/.htaccess',
+        'public/.htpasswd',
+        'public/index.php',
+        'public/robots.txt',
+        'public/sitemap.xml'
     ],
-    localOnlyImgs: 'static/media/img/_local-only',
+    localOnlyImgs: 'public/media/img/_local-only',
     metaRobotsUrl: 'app/View/base/main.php',
     internal: [
         'app/View/base/main.php',
-        'app/View/base/p404.php'
+        'app/View/base/p404.php',
+        'app/View/base/debug.php'
     ],
     additionalScript: []
 }

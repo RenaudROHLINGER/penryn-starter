@@ -5,6 +5,7 @@
         "jquery" : true
     },
     "globals": {
+        "Penryn": true,
         "google": true,
         "bodymovin": true,
         "THREE": true,

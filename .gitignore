@@ -6,11 +6,11 @@ package-lock.json
 yarn.lock
 ip.js
 dist
-src/app/Config/Database.php
 src/app/Bundle
-src/static/js/app/Bundle
-src/static/js/app.js
-src/static/style/css/lib
-src/static/style/css/app.css
-src/static/style/font
+src/app/Config/Database.php
+src/asset/js/app/Bundle
+src/asset/css/lib
+src/public/js
+src/public/css
+src/public/font
 src/adminer*.php

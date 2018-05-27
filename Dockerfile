@@ -1,4 +1,4 @@
-FROM php:7.2.5-apache
+FROM php:7.2.6-apache
 
 MAINTAINER Aristide Benoist
 

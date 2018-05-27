@@ -49,6 +49,10 @@ class Controller {
         echo $this->getContent(ROOT . 'app/View/base/p404.php');
     }
 
+    public function renderDebug () {
+        echo $this->getContent(ROOT . 'app/View/base/debug.php');
+    }
+
     private function getContent ($fileName) {
         ob_start();
         require $fileName;

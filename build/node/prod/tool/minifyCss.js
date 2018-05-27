@@ -5,7 +5,7 @@ const writeInternal = require('./writeInternal.js')
 const consoleEnd = require('./consoleEnd.js')
 
 module.exports = _ => {
-    const css = fs.readFileSync(config.src + config.minify.css, 'utf8')
+    const css = fs.readFileSync(config.src + config.minify.root + config.minify.css, 'utf8')
 
     cssnano.process(css).then(result => {
         writeInternal({

@@ -39,7 +39,7 @@ class Route {
 
     public function getController () {
         $params = explode('#', $this->controller);
-        $controller = 'App\\Controller\\' . $params[0] . 'Controller';
+        $controller = 'App\\Controller\\Page\\' . $params[0];
         $controller = new $controller($this->callArgs);
         return call_user_func_array([$controller, $params[1]], $this->callArgs);
     }

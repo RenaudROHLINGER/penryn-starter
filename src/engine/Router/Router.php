@@ -8,7 +8,8 @@ class Router {
 
     private $url;
     private $routes = [];
-    private $errorController;
+    private $debugControllerFunc;
+    private $p404ControllerFunc;
 
     public function __construct () {
         $this->url = isset($_GET['url']) ? $_GET['url'] : '';
@@ -22,8 +23,12 @@ class Router {
         return $this->add($path, $controller, 'POST');
     }
 
-    public function error ($errorController) {
-        $this->errorController = $errorController;
+    public function debug ($debugControllerFunc) {
+        $this->debugControllerFunc = $debugControllerFunc;
+    }
+
+    public function p404 ($p404ControllerFunc) {
+        $this->p404ControllerFunc = $p404ControllerFunc;
     }
 
     public function add ($path, $controller, $method) {
@@ -40,10 +45,17 @@ class Router {
             }
         }
 
-        // Error
-        $controller = 'App\\Controller\\ErrorController';
-        $controller = new $controller(false);
-        return call_user_func([$controller, $this->errorController]);
+        // Debug
+        if ($this->url === 'debug') {
+            $controller = 'App\\Controller\\Separate\\Debug';
+            $controller = new $controller(false);
+            return call_user_func([$controller, $this->debugControllerFunc]);
+        // Page 404
+        } else {
+            $controller = 'App\\Controller\\Separate\\P404';
+            $controller = new $controller(false);
+            return call_user_func([$controller, $this->p404ControllerFunc]);
+        }
     }
 
 }
