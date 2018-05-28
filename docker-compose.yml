@@ -1,4 +1,4 @@
-version: "3"
+version: "3.6"
 services:
     php:
         build: .
@@ -10,12 +10,19 @@ services:
             - ./:/etc/apache2/sites-enabled
 
     db:
-        image: mysql
+        image: mysql:5.7
+        #image: mysql → doesn't work with php:7.2.6-apache
+        restart: always
         ports:
             - 3306:3306
-        restart: always
         environment:
-            - MYSQL_DATABASE=___base_name___
-            - MYSQL_USER=root
+            - MYSQL_DATABASE=makereign
+            - MYSQL_USER=db
             - MYSQL_PASSWORD=root
             - MYSQL_ROOT_PASSWORD=root
+
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080

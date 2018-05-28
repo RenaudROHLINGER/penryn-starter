@@ -12,7 +12,7 @@ class P404 extends Controller {
             HEAD
         ------------------------------------*/
 
-        $this->head['title'] = '404 Error — Not Found';
+        $this->head['title'] = 'Error — 404 Not Found';
 
         /*------------------------------------
             RENDER ERROR

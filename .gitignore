@@ -10,7 +10,6 @@ src/app/Bundle
 src/app/Config/Database.php
 src/asset/js/app/Bundle
 src/asset/css/lib
-src/public/js
 src/public/css
 src/public/font
-src/adminer*.php
+src/public/js
