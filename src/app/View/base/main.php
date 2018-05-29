@@ -17,18 +17,18 @@
         <meta name="twitter:site" content="<?= $this->head['twitter']['pseudo']; ?>">
         <meta name="twitter:title" content="<?= $this->head['title']; ?>">
         <meta name="twitter:description" content="<?= $this->head['description']; ?>">
-        <meta name="twitter:image" content="<?= $this->head['opengraph']; ?>">
+        <meta name="twitter:image" content="<?= $this->head['urlBase'] . $this->head['opengraph']; ?>">
         <meta name="twitter:creator" content="<?= $this->head['twitter']['creator']; ?>">
         <!-- Google+ -->
         <meta itemprop="name" content="<?= $this->head['title']; ?>">
         <meta itemprop="description" content="<?= $this->head['description']; ?>">
-        <meta itemprop="image" content="<?= $this->head['opengraph']; ?>">
+        <meta itemprop="image" content="<?= $this->head['urlBase'] . $this->head['opengraph']; ?>">
         <!-- Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="<?= $this->head['url']; ?>">
         <meta property="og:title" content="<?= $this->head['title']; ?>">
         <meta property="og:description" content="<?= $this->head['description']; ?>">
-        <meta property="og:image" content="<?= $this->head['opengraph']; ?>">
+        <meta property="og:image" content="<?= $this->head['urlBase'] . $this->head['opengraph']; ?>">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
         <!-- Favicon -->
