@@ -10,7 +10,7 @@ module.exports = opts => {
     rollup.rollup({
         input: opts.entry,
         plugins: [
-            eslint({
+            eslint.eslint({
                 configFile: opts.eslint,
                 exclude: ['node_modules/**', '**/S.js']
             }),

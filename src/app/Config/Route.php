@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace App\Config;
 
 use \Engine\Router\Router;
 

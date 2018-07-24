@@ -3,7 +3,7 @@
 namespace App\Core;
 
 use \Engine\Core\Autoloader;
-use \App\Core\Route;
+use \App\Config\Route;
 
 class App {
 

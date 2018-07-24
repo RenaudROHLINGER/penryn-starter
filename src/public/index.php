@@ -18,8 +18,8 @@ exit();
 $root = explode('/', $_SERVER['DOCUMENT_ROOT']);
 array_pop($root);
 
-require implode('/', $root) . '/app/Config/Constant.php';
-\App\Config\Constant::init();
+require implode('/', $root) . '/app/Core/Constant.php';
+\App\Core\Constant::init();
 
 require ROOT . 'app/Core/App.php';
 \App\Core\App::init();
