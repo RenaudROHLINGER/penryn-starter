@@ -3,7 +3,7 @@ const fs = require('fs')
 
 module.exports = opts => {
     const replacement = opts.type === 'js' ? '<script>' + opts.content + '</script>' : '<style>' + opts.content + '</style>'
-    const toReplace = opts.type === 'js' ? '<script type="text/javascript" src="/' + config.minify.js + '"></script>' : '<link rel="stylesheet" href="/' + config.minify.css + '">'
+    const toReplace = opts.type === 'js' ? '<script src="/' + config.minify.js + '"></script>' : '<link rel="stylesheet" href="/' + config.minify.css + '">'
 
     function writeInternal (i) {
         const file = config.dest + config.internal[i]

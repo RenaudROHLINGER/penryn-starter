@@ -41,7 +41,6 @@ module.exports = {
         'public/sitemap.xml'
     ],
     localOnlyImgs: 'public/media/img/_local-only',
-    metaRobotsUrl: 'app/View/base/main.php',
     internal: [
         'app/View/base/main.php',
         'app/View/base/p404.php',

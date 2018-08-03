@@ -10,8 +10,8 @@ RewriteBase /
 #RewriteRule (.*) https://www.m.example.com/ [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^example.com$
-RewriteRule ^(.*) http://www.example.com/$1  [QSA,L,R=301]
-#RewriteRule ^(.*) https://www.example.com/$1  [QSA,L,R=301]
+RewriteRule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
+#RewriteRule ^(.*) https://www.example.com/$1 [QSA,L,R=301]
 
 #RewriteCond %{HTTP_HOST} ^(www\.)?example\.com$ [NC]
 #RewriteCond %{HTTPS} !=on

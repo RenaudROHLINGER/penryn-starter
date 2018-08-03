@@ -45,6 +45,6 @@
         <?php include ROOT . 'app/View/issue/enableJavascript.php'; ?>
         <?php include ROOT . 'app/View/common/svg.php'; ?>
         <!-- Script -->
-        <script type="text/javascript" src="/js/app.js"></script>
+        <script src="/js/app.js"></script>
     </body>
 </html>
