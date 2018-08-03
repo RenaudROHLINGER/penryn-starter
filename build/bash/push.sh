@@ -1,5 +1,4 @@
 #!/bin/bash
-node build/node/reset/index.js
 node build/node/push/index.js
 PACKAGE_VERSION=$(cat package.json \
   | grep version \
