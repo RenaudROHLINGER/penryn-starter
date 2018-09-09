@@ -34,7 +34,6 @@
             <?php include ROOT . 'app/View/common/sail.php'; ?>
             <?php include ROOT . 'app/View/common/loader.php'; ?>
         </main>
-        <?php include ROOT . 'app/View/issue/browserWidth.php'; ?>
         <?php include ROOT . 'app/View/issue/updateBrowser.php'; ?>
         <?php include ROOT . 'app/View/issue/enableJavascript.php'; ?>
         <?php include ROOT . 'app/View/common/svg.php'; ?>

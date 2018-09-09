@@ -16,7 +16,7 @@ services:
         ports:
             - 3306:3306
         environment:
-            - MYSQL_DATABASE=___base_name___
+            - MYSQL_DATABASE=makereign
             - MYSQL_USER=db
             - MYSQL_PASSWORD=root
             - MYSQL_ROOT_PASSWORD=root

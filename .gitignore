@@ -2,11 +2,11 @@
 node_modules
 *.log
 .idea
+.git
 package-lock.json
 yarn.lock
 ip.js
 dist
-src/app/Bundle
 src/app/Config/Database.php
 src/asset/js/app/Bundle
 src/asset/css/lib

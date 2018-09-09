@@ -34,13 +34,14 @@ module.exports = {
         'public/font',
         'public/media',
         'public/og',
+        'public/php',
         'public/.htaccess',
         'public/.htpasswd',
         'public/index.php',
         'public/robots.txt',
         'public/sitemap.xml'
     ],
-    localOnlyImgs: 'public/media/img/_local-only',
+    localOnlyImgs: 'public/media/_local-only',
     internal: [
         'app/View/base/main.php',
         'app/View/base/p404.php',

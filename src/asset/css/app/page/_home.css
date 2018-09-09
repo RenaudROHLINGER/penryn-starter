@@ -18,7 +18,7 @@
     font-size: 10vw;
 }
 #h-link {
-    position: absolute;
+    position: fixed;
     top: 2vw;
     left: 2.2vw;
     font-weight: 200;

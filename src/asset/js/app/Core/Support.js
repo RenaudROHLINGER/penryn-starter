@@ -7,9 +7,8 @@ class Support {
             S.Dom.html.className = 'old-browser'
         }
 
-        if (S.Snif.isMobile) {
-            S.Dom.body.className = 'is-mobile'
-        }
+        const bClass = S.Snif.isMobile ? 'mobile' : 'desktop'
+        S.Dom.body.className = 'is-' + bClass
     }
 
 }
