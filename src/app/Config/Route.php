@@ -30,7 +30,6 @@ class Route {
         $router->get('/', 'Home#show');
         $router->get('/about', 'About#show');
 
-        $router->debug('show');
         $router->p404('show');
 
         $router->run();

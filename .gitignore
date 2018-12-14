@@ -11,5 +11,6 @@ src/app/Config/Database.php
 src/asset/js/app/Bundle
 src/asset/css/lib
 src/public/css
-src/public/font
 src/public/js
+src/public/offline
+src/public/sw.js

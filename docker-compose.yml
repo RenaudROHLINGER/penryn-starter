@@ -1,4 +1,4 @@
-version: "3.6"
+version: "3.7"
 services:
     php:
         build: .
@@ -11,7 +11,7 @@ services:
 
     db:
         image: mysql:5.7
-        #image: mysql → doesn't work with php:7.2.6-apache
+        #image: mysql → doesn't work with php
         restart: always
         ports:
             - 3306:3306

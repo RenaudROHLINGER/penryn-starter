@@ -16,7 +16,7 @@ A starter kit for web development.
 
 * [Docker](https://www.docker.com)
 * [Browsersync](https://browsersync.io)
-* [PHP 7.2.8](https://hub.docker.com/_/php)
+* [PHP 7.3.0](https://hub.docker.com/_/php)
 * [MySQL](https://hub.docker.com/_/mysql)
 * [Adminer](https://hub.docker.com/_/adminer)
 * [PostCSS](http://postcss.org)

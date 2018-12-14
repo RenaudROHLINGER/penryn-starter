@@ -1,10 +1,10 @@
-import Loader from '../Bundle/Transition/Loader.js'
+import Preloader from '../Bundle/Transition/Preloader.js'
 import Transition from '../Bundle/Transition/Transition.js'
 
 class Main {
 
     preload () {
-        Loader.run()
+        Preloader.run()
     }
 
     intro () {

@@ -41,19 +41,14 @@ class Router {
         Xhr.onPopstate()
 
         // Controller + EventDelegation
-        let Controller
-        if (this.p.path.new === '/debug') {
-            Controller = o.debug
-        } else {
-            this.p404Controller = o.p404
-            this.MainController = o.main
+        this.p404Controller = o.p404
+        this.MainController = o.main
 
-            Controller = this.getController()
+        const Controller = this.getController()
 
-            // Event delegation
-            S.BM(this, ['getController'])
-            new EventDelegation(this.getController)
-        }
+        // Event delegation
+        S.BM(this, ['getController'])
+        new EventDelegation(this.getController)
 
         // Preload
         Controller.preload()

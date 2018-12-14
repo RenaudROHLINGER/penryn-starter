@@ -33,19 +33,20 @@ module.exports = {
         'public/fav',
         'public/font',
         'public/media',
+        'public/offline',
         'public/og',
         'public/php',
         'public/.htaccess',
         'public/.htpasswd',
         'public/index.php',
         'public/robots.txt',
-        'public/sitemap.xml'
+        'public/sitemap.xml',
+        'public/sw.js'
     ],
     localOnlyImgs: 'public/media/_local-only',
     internal: [
         'app/View/base/main.php',
-        'app/View/base/p404.php',
-        'app/View/base/debug.php'
+        'app/View/base/p404.php'
     ],
     additionalScript: []
 }
