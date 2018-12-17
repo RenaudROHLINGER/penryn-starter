@@ -93,7 +93,7 @@ class EventDelegation {
         this.p.is404 = false
         this.done()
         // Old outro
-        oldInstance.outro(this.p.xhr)
+        oldInstance.outro()
         this.p.xhr.removeOld()
     }
 
@@ -116,7 +116,7 @@ class EventDelegation {
         // this.p.xhr.removeOld()
         // this.p.xhr.insertNew()
         // New intro
-        newInstance.intro(this.p.xhr)
+        newInstance.intro()
         this.p.xhr.insertNew()
     }
 
