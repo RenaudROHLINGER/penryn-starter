@@ -10,7 +10,6 @@ class EventDelegation {
         // Parameters
         this.p = Penryn
         this.xhr = S.G.id('xhr')
-
         // Bind
         S.BM(this, ['eventDelegation', 'done', 'xhrCallback'])
 
@@ -33,10 +32,8 @@ class EventDelegation {
             }
             target = target.parentNode
         }
-
         if (targetIsATag) {
             const targetHref = target.dataset.href === undefined ? target.href : target.dataset.href
-
             if (target.classList.contains('_tb')) {
                 prD()
                 w.open(targetHref)
@@ -94,9 +91,10 @@ class EventDelegation {
         this.p.target = this.target
         this.p.path = this.path
         this.p.is404 = false
-
+        this.done()
         // Old outro
-        oldInstance.outro()
+        oldInstance.outro(this.p.xhr)
+        this.p.xhr.removeOld()
     }
 
     done () {
@@ -105,7 +103,6 @@ class EventDelegation {
 
     xhrCallback (response) {
         const newInstance = this.getController()
-
         this.p.xhr = {
             insertNew: _ => {
                 this.xhr.insertAdjacentHTML('beforeend', response)
@@ -116,9 +113,11 @@ class EventDelegation {
             }
         }
         this.p.outroIsOn = true
-
+        // this.p.xhr.removeOld()
+        // this.p.xhr.insertNew()
         // New intro
-        newInstance.intro()
+        newInstance.intro(this.p.xhr)
+        this.p.xhr.insertNew()
     }
 
 }

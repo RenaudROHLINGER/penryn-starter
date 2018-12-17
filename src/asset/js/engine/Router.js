@@ -45,12 +45,11 @@ class Router {
         this.MainController = o.main
 
         const Controller = this.getController()
-
         // Event delegation
         S.BM(this, ['getController'])
-        new EventDelegation(this.getController)
-
+        var ed = new EventDelegation(this.getController)
         // Preload
+        ed.xhrCallback()
         Controller.preload()
     }
 

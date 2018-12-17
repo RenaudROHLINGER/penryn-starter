@@ -1,5 +1,4 @@
 const config = require('./config/config.js')
-const ip = require('./config/ip.js')
 const browserSync = require('browser-sync').create()
 const rollup = require('../common/tool/rollup.js')
 const postcss = require('../common/tool/postcss.js')
@@ -9,13 +8,6 @@ compileCss()
 
 const isWindows = /^win/.test(process.platform)
 const browserSyncConfig = {
-    win: {
-        open: 'external',
-        host: ip,
-        proxy: ip,
-        port: 3000,
-        notify: false
-    },
     mac: {
         open: 'external',
         proxy: 'http://localhost/',
