@@ -4,6 +4,8 @@ A starter kit for web development.
 
 ## Installation
 
+    $ update docker-compose db environnement
+    $ rename App/Config/Database_.php to App/Config/Database.php
     $ docker-compose up
     $ yarn
 
@@ -25,3 +27,20 @@ A starter kit for web development.
 * [Rollup](https://rollupjs.org)
 * [Uglify JS 3](https://github.com/mishoo/UglifyJS2)
 * [@ariiiman/s](https://github.com/ariiiman/s)
+
+## BDD Fast startup with backend
+Go to Adminer GUI, (localhost:8080, docker-compose.yml settings)
+
+SQL :
+
+```
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO users (username, password, created_at) VALUES ('admin', 'password', now())
+```
+
+Change App/Config/Database.php according to docker-compose.yml config
