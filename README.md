@@ -44,3 +44,7 @@ INSERT INTO users (username, password, created_at) VALUES ('admin', 'password', 
 ```
 
 Change App/Config/Database.php according to docker-compose.yml config
+
+TODO :
+Clean this repo with back stuff & move it to another repo -> Split in 2 repos, one front & one back
+Script for faster startup & db config (id, password, config prompt)
